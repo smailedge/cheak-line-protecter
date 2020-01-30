@@ -9,27 +9,27 @@ import time, random, sys, json, codecs, threading, glob, re, string, os, request
 botStart = time.time()
 
 #cl = LINE()
-cl = LINE('EuFbJ6jYSizyxxso0Ae7.7NpEwRfre4u3YeFZ46fsfW.phJPMHMw2ceIP65JKROL0NwZ9vS577OKW777TqWTmnQ=')
+cl = LINE('ENyBvH5ip5D25HmWn7de.DPb0VWc+lxIi+i5T4WVCBG.+EIRU5uFw2ekUUXYqwW+fdqaMpyl7kyaRHFe6SKFtZQ=')
 cl.log("Auth Token : " + str(cl.authToken))
 cl.log("Timeline Token : " + str(cl.tl.channelAccessToken))
 
 #k1 = LINE()
-k1 = LINE('Eu4A9BVxJpC8JK95xVE1.v5e2pzIr/vTl1S6SSIih0q.fcABNkRxas0zmT64+BLmNipNKWHYemysC/K5u23FPbY=')
+k1 = LINE('EN1ShxknljXzt4JEJyy2.Hqt3usa6GThPGq1W+eE7OG.wMHx7WIxz2jX+RrAHgeVlHsdJgRW5NNGTl9ifgp03MM=')
 k1.log("Auth Token : " + str(k1.authToken))
 k1.log("Timeline Token : " + str(k1.tl.channelAccessToken))
 
 #k2 = LINE()
-k2 = LINE('EuzL0r2dYa6dwnmAUZn7.hYVUGM5iivxCNrlcChxSPW.d9cVI7s+Fr5g/8MJ7eqEIwl1OuBskpJQTZyuSORK8tw=')
+k2 = LINE('ENnK1BfoXoY5Sc7pCt28.+Es3tzQcdLmg7lYXW5GFIa.V8H69H9Hq0f4eyPWAw8yZ1PvQn2iKWtHWCZEzNVkHmM=')
 k2.log("Auth Token : " + str(k2.authToken))
 k2.log("Timeline Token : " + str(k2.tl.channelAccessToken))
 
 #k3 = LINE()
-k3 = LINE('EuYRA9r1C1LFeFo3Eie1.aleqfE7GuDFMnIRmFot+yq.LFLdFBbu8hi8DMlUpHLGavFH8pAn5c7kIfYKubYDbfU=')
+k3 = LINE('EN2H3QkUsShdDYCz5mOb.prRZLwJqPCmMfE5IXSxJAW.8MD1eUxBFdPTQF6IlMYOdOxQYBfz7e51y4Z5byxRRR0=')
 k3.log("Auth Token : " + str(k3.authToken))
 k3.log("Timeline Token : " + str(k3.tl.channelAccessToken))
 
 #k4 = LINE()
-k4 = LINE('Euy2J1QW8Ir0HOtbeUAf.XvQeWsOMx9EsZAhfPvUxlW.6r5npO1+JQKXUuL+qThtBQdY79HLVC9LU94rLinIAZk=')
+k4 = LINE('ENYo3GuxdzKqrEyMWlac.3eFmkgPriPKsRz7omolaVa.CjYzVK6jVKLI7OslFoxbVSbm9L7Soh/mZtWeUC8Emfs=')
 k4.log("Auth Token : " + str(k4.authToken))
 k4.log("Timeline Token : " + str(k4.tl.channelAccessToken))
 
@@ -112,7 +112,7 @@ def sendMessageWithMention(to, mid):
         logError(error)
 def helpmessage():
     helpMessage = """╔══════════════
-╠♥  ㄩㄗ5隻保鑣半垢  ♥
+╠♥  可愛ㄉBot  ♥
 ║
 ╠══✪〘 指令一覽表 〙✪═══
 ║
@@ -212,8 +212,7 @@ def helpmessage():
 ╠➥ botslist 自動邀請表
 ╠➥ join 自動邀請
 ║
-║〘使用者By:ㄩㄗ
-╚═ 作成者By:い悠遠ゞܣ􀬁􀆐􀬁天下第一喵～〙"""
+╚═ 作成者By:Yuan〙"""
     return helpMessage
 wait2 = {
     'readPoint':{},
@@ -241,9 +240,9 @@ backup.pictureStatus = contact.pictureStatus
 def cTime_to_datetime(unixtime):
     return datetime.datetime.fromtimestamp(int(str(unixtime)[:len(str(unixtime))-3]))
 
-creator =['uee73de5ab151138537c847f3e3a15217','ua10c2ad470b4b6e972954e1140ad1891']
-admin =['uee73de5ab151138537c847f3e3a15217','ua10c2ad470b4b6e972954e1140ad1891']
-owners = ["uee73de5ab151138537c847f3e3a15217","ua10c2ad470b4b6e972954e1140ad1891"]
+creator =['ub6f9d53713c5869f0d78e71febe13837']
+admin =['ub6f9d53713c5869f0d78e71febe13837']
+owners = ["ub6f9d53713c5869f0d78e71febe13837"]
 #if clMID not in owners:
 #    python = sys.executable
 #    os.execl(python, python, *sys.argv)
