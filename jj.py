@@ -70,7 +70,7 @@ def sendMessageWithMention(to, mid):
         logError(error)
 def helpmessage():
     helpMessage = """╔═════════════
-╠♥ ✿✿✿ 十香の特製Bot ✿✿✿ ♥
+╠♥ ✿✿✿ Yuan Read 已讀專機 ✿✿✿ ♥
 ╠SR 設定已讀點
 ╠LR 查看誰已讀
 ╠Nk @ 標註踢人
@@ -82,8 +82,8 @@ wait = {
     "share":False,
     "sender" :{},
 }
-admin =['ud5ff1dff426cf9e3030c7ac2a61512f0','ua10c2ad470b4b6e972954e1140ad1891',clMID]
-owners = ["ua10c2ad470b4b6e972954e1140ad1891","ud5ff1dff426cf9e3030c7ac2a61512f0"]
+admin =['ub6f9d53713c5869f0d78e71febe13837',clMID]
+owners = ["ub6f9d53713c5869f0d78e71febe13837"]
 #if clMID not in owners:
 #    python = sys.executable
 #    os.execl(python, python, *sys.argv)
@@ -154,8 +154,7 @@ def lineBot(op):
                 if text.lower() == 'help':
                     helpMessage = helpmessage()
                     cl.sendMessage(to, str(helpMessage))
-                    cl.sendContact(to,"u0a59c278b1529476ddb210cb5e827ffc")
-                    cl.sendContact(to,"ufb30e2203f44bc7b72e28b09a88c9bbd")
+                    cl.sendContact(to,"ub6f9d53713c5869f0d78e71febe13837")
 #==============================================================================#
                 elif text.lower() == 'speed':
                     start = time.time()
